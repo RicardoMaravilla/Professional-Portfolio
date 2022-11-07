@@ -1,0 +1,16 @@
+2022.11.06 15:13:02 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at c:\Users\ricar\Documents\Github\Professional-Portfolio\.metals\lsp.trace.json or C:\Users\ricar\AppData\Local\scalameta\metals\cache\lsp.trace.json
+2022.11.06 15:13:03 INFO  logging to file C:\Users\ricar\Documents\Github\Professional-Portfolio\.metals\metals.log
+2022.11.06 15:13:03 INFO  Started: Metals version 0.11.9 in workspace 'C:\Users\ricar\Documents\Github\Professional-Portfolio' for client Visual Studio Code 1.73.0.
+2022.11.06 15:13:05 INFO  time: initialize in 2.46s
+2022.11.06 15:13:06 WARN  Build server is not auto-connectable.
+2022.11.06 15:13:06 WARN  no build tool detected in workspace 'C:\Users\ricar\Documents\Github\Professional-Portfolio'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2022.11.06 15:13:06 WARN  no build target for: C:\Users\ricar\Documents\Github\Professional-Portfolio\Big Data\basic.scala
+2022.11.06 15:13:16 INFO  no build target found for C:\Users\ricar\Documents\Github\Professional-Portfolio\Big Data\basic.scala. Using presentation compiler with project's scala-library version: 3.2.0
+2022.11.06 15:13:17 INFO  time: code lens generation in 10s
+nov 06, 2022 10:54:32 P. M. org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFORMACIÓN: Unsupported notification method: $/setTrace
+nov 06, 2022 10:54:34 P. M. org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFORMACIÓN: Unsupported notification method: $/setTrace
+nov 06, 2022 10:54:39 P. M. org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFORMACIÓN: Unsupported notification method: $/setTrace
+2022.11.06 23:01:20 INFO  shutting down Metals
