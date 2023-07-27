@@ -13,6 +13,7 @@ DB_FORMAT = "com.microsoft.sqlserver.jdbc.spark"
 DB_URL = "jdbc:sqlserver://{SERVER_ADDR};databaseName=emp;"
 DB_USER = "user"
 DB_PASSWORD = "password"
+PATH = "path/"
 
 
 def read_csv(filename, spark):
@@ -49,7 +50,7 @@ def main():
             .master("local[*]") \
             .getOrCreate() \
 
-    csv_list = get_csv_list("path/")
+    csv_list = get_csv_list(PATH)
     logger.info("CSV list: %s", csv_list)
 
     for csv in csv_list:
