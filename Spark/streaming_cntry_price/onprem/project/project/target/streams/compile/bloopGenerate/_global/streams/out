@@ -1,0 +1,4 @@
+[debug] [onprem-build-build] Classpath dependencies List()
+[debug] [onprem-build-build] Dependencies from configurations List()
+[debug] Bloop wrote the configuration of project 'onprem-build-build' to '/Users/ricardomaravilla/Documents/GitHub/Streaming/streaming_cntry_price/onprem/project/project/.bloop/onprem-build-build.json'
+[success] Generated .bloop/onprem-build-build.json

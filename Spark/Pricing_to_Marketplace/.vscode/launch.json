@@ -1,0 +1,71 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "type": "scala",
+        "request": "launch",
+        "name": "Local",
+        "mainClass": "StreamingPricingMarketplaceLocal",
+        "args": [""],
+        "jvmOptions": ["-Djavax.net.ssl.trustStore=/Users/ricardomaravilla/Documents/keystore/ssl_key.jks"],
+        "env": {"DSWDIA_CONF_FILEPATH":"/Users/ricardomaravilla/Documents/streaming/dswdia_config_uat.conf",
+                "SSL_KEY":"/Users/ricardomaravilla/Documents/keystore/ssl_key.jks",
+                "KAFKA_TOPICS":"odsqa.wwpp1.wwide_fnshd_good_sap,odsqa.wwpp2.prod_publshg,odsqa.wwpp2.cntry_price_drct,odsqa.wwpp2.cntry_price_tierd_drct,odsqa.ffxt1.pricing_tierd_ecom_scw,odsqa.ffxt1.sw_prod_scw",
+                //"KAFKA_TOPICS":"odsqa.wwpp2.cntry_price_tierd_drct",
+                "SCHEMA_REGISTRY_URL":"http://ccpcls.dsw-dia-dataflow-877236.us-south.containers.appdomain.cloud:18081",
+                "SECRETS_APIKEY":"biOoRmzcCtGctk9UHg9DNY2B79oyGGAC9W-ZQxTX8viv",
+                "PARTS_API_URL":"https://wwwstage.ibm.com/marketplace/purchase/catalog/resources/publishedprices/import",
+                "PARTS_API_TOKEN":"randomstring",
+                "BATCH_API_URL":"https://api.marketplace.ibm.com/staging/checkout/configuration/api/v1/parts",
+                "BATCH_API_TOKEN":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJPRFMiLCJpc3MiOiJJQk0gTWFya2V0cGxhY2UgQ2hlY2tvdXQiLCJnZW5lcmF0ZWRBdCI6MTUzOTA5NTQwNzk5OCwic2VydmljZXMiOlsicHJveHkiLCJyZWFkIiwid3JpdGUiLCJjb25maWd1cmF0aW9uIl19.vdgY8I2EZSAawhRKZJLXR1cEmfycVWu0S2grFj3cV9jsdV_d7KkrJKqid5ODW2hMUNmi1hfzWXYzBi5rZF6VcA",
+                "SECRETS_PROXY":"127.0.0.1:8087"}
+      },
+      {
+        "type": "scala",
+        "request": "launch",
+        "name": "QueryDataTest",
+        "testClass": "QueryDataTest",
+        "jvmOptions": ["-Djavax.net.ssl.trustStore=/Users/ricardomaravilla/Documents/keystore/ssl_key.jks"],
+        "env": {"DSWDIA_CONF_FILEPATH":"/Users/ricardomaravilla/Documents/streaming/dswdia_config_uat.conf",
+                "SSL_KEY":"/Users/ricardomaravilla/Documents/keystore/ssl_key.jks",
+                "SECRETS_APIKEY":"biOoRmzcCtGctk9UHg9DNY2B79oyGGAC9W-ZQxTX8viv",
+                "SECRETS_PROXY":"127.0.0.1:8087"}
+      },
+      {
+        "type": "scala",
+        "request": "launch",
+        "name": "JsonMakerTesting",
+        "testClass": "JsonMakerTest",
+        "jvmOptions": ["-Djavax.net.ssl.trustStore=/Users/ricardomaravilla/Documents/keystore/ssl_key.jks"],
+        "env": {"DSWDIA_CONF_FILEPATH":"/Users/ricardomaravilla/Documents/streaming/dswdia_config_uat.conf",
+                "SSL_KEY":"/Users/ricardomaravilla/Documents/keystore/ssl_key.jks",
+                "SECRETS_APIKEY":"biOoRmzcCtGctk9UHg9DNY2B79oyGGAC9W-ZQxTX8viv",
+                "SECRETS_PROXY":"127.0.0.1:8087"}
+      },
+      {
+        "type": "scala",
+        "request": "launch",
+        "name": "ApiConnectorTest",
+        "testClass": "ApiConnectorTest",
+        "jvmOptions": ["-Djavax.net.ssl.trustStore=/Users/ricardomaravilla/Documents/keystore/ssl_key.jks"],
+        "env": {"DSWDIA_CONF_FILEPATH":"/Users/ricardomaravilla/Documents/streaming/dswdia_config_uat.conf",
+                "SSL_KEY":"/Users/ricardomaravilla/Documents/keystore/ssl_key.jks",
+                "SECRETS_APIKEY":"biOoRmzcCtGctk9UHg9DNY2B79oyGGAC9W-ZQxTX8viv",
+                "SECRETS_PROXY":"127.0.0.1:8087"}
+      },
+      {
+        "type": "scala",
+        "request": "launch",
+        "name": "BatchPartsTest",
+        "testClass": "BatchPartsTest",
+        "jvmOptions": ["-Djavax.net.ssl.trustStore=/Users/ricardomaravilla/Documents/keystore/ssl_key.jks"],
+        "env": {"DSWDIA_CONF_FILEPATH":"/Users/ricardomaravilla/Documents/streaming/dswdia_config_uat.conf",
+                "SSL_KEY":"/Users/ricardomaravilla/Documents/keystore/ssl_key.jks",
+                "SECRETS_APIKEY":"biOoRmzcCtGctk9UHg9DNY2B79oyGGAC9W-ZQxTX8viv",
+                "SECRETS_PROXY":"127.0.0.1:8087"}
+      }
+    ]
+  }

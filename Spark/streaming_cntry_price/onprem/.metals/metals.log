@@ -1,0 +1,474 @@
+2024.03.05 11:06:44 INFO  Started: Metals version 1.2.2 in folders '/Users/ricardomaravilla/Documents/GitHub/Streaming/streaming_cntry_price/onprem' for client Visual Studio Code 1.87.0.
+11:06:45.994 [pool-1-thread-1] INFO org.flywaydb.core.internal.license.VersionPrinter -- Flyway Community Edition 9.22.3 by Redgate
+11:06:45.998 [pool-1-thread-1] INFO org.flywaydb.core.internal.license.VersionPrinter -- See release notes here: https://rd.gt/416ObMi
+11:06:45.998 [pool-1-thread-1] INFO org.flywaydb.core.internal.license.VersionPrinter -- 
+11:06:46.002 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning for classpath resources at 'classpath:db/callback' ...
+11:06:46.002 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Determining location urls for classpath:db/callback using ClassLoader jdk.internal.loader.ClassLoaders$AppClassLoader@5ffd2b27 ...
+11:06:46.002 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Unable to resolve location classpath:db/callback.
+11:06:46.002 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning for classpath resources at 'classpath:db/migration' ...
+11:06:46.002 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Determining location urls for classpath:db/migration using ClassLoader jdk.internal.loader.ClassLoaders$AppClassLoader@5ffd2b27 ...
+11:06:46.003 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning URL: jar:file:/Users/ricardomaravilla/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalameta/metals_2.13/1.2.2/metals_2.13-1.2.2.jar!/db/migration
+11:06:46.008 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/
+11:06:46.008 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V1__Create_tables.sql
+11:06:46.008 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V2__Server_discovery.sql
+11:06:46.009 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V3__Jar_symbols.sql
+11:06:46.009 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V4__Fingerprints.sql
+11:06:46.009 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning for classes at classpath:db/migration
+11:06:46.014 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+11:06:46.014 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V3__Jar_symbols.sql
+11:06:46.014 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V4__Fingerprints.sql
+11:06:46.015 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V1__Create_tables.sql
+11:06:46.015 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V2__Server_discovery.sql
+11:06:46.106 [pool-1-thread-1] INFO org.flywaydb.core.FlywayExecutor -- Database: jdbc:h2:file:/Users/ricardomaravilla/Documents/GitHub/Streaming/streaming_cntry_price/onprem/.metals/metals (H2 2.2)
+11:06:46.107 [pool-1-thread-1] DEBUG org.flywaydb.core.FlywayExecutor -- Driver: H2 JDBC Driver 2.2.224 (2023-09-17)
+11:06:46.107 [pool-1-thread-1] DEBUG org.flywaydb.core.FlywayExecutor -- DDL Transactions Supported: false
+11:06:46.108 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.schemahistory.SchemaHistoryFactory -- Schemas: 
+11:06:46.109 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.schemahistory.SchemaHistoryFactory -- Default schema: null
+11:06:46.115 [pool-1-thread-1] WARN org.flywaydb.core.internal.database.base.Database -- Flyway upgrade recommended: H2 2.2.224 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+11:06:46.117 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.callback.SqlScriptCallbackFactory -- Scanning for SQL callbacks ...
+11:06:46.117 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+11:06:46.129 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.command.DbValidate -- Validating migrations ...
+11:06:46.134 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+11:06:46.144 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V3__Jar_symbols.sql (filename: V3__Jar_symbols.sql)
+11:06:46.145 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V4__Fingerprints.sql (filename: V4__Fingerprints.sql)
+11:06:46.145 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V1__Create_tables.sql (filename: V1__Create_tables.sql)
+11:06:46.145 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V2__Server_discovery.sql (filename: V2__Server_discovery.sql)
+11:06:46.145 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+11:06:46.146 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V3__Jar_symbols.sql (filename: V3__Jar_symbols.sql)
+11:06:46.146 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V4__Fingerprints.sql (filename: V4__Fingerprints.sql)
+11:06:46.146 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V1__Create_tables.sql (filename: V1__Create_tables.sql)
+11:06:46.146 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V2__Server_discovery.sql (filename: V2__Server_discovery.sql)
+11:06:46.146 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+11:06:46.163 [pool-1-thread-1] INFO org.flywaydb.core.internal.command.DbValidate -- Successfully validated 4 migrations (execution time 00:00.033s)
+11:06:46.166 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.command.DbSchemas -- Skipping creation of existing schema: "PUBLIC"
+11:06:46.175 [pool-1-thread-1] INFO org.flywaydb.core.internal.command.DbMigrate -- Current version of schema "PUBLIC": 4
+11:06:46.179 [pool-1-thread-1] INFO org.flywaydb.core.internal.command.DbMigrate -- Schema "PUBLIC" is up to date. No migration necessary.
+11:06:46.911 [pool-1-thread-1] DEBUG org.flywaydb.core.FlywayExecutor -- Memory usage: 87 of 284M
+2024.03.05 11:06:47 INFO  skipping build import with status 'Installed'
+2024.03.05 11:06:47 INFO  Attempting to connect to the build server...
+2024.03.05 11:06:47 INFO  Bloop uses /Users/ricardomaravilla/.jabba/jdk/openjdk@1.17.0/Contents/Home defined at /Users/ricardomaravilla/.bloop/bloop.json
+mar. 05, 2024 11:06:47 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2
+2024.03.05 11:06:47 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/ricardomaravilla/Documents/GitHub/Streaming/streaming_cntry_price/onprem/.metals/bsp.trace.json or /Users/ricardomaravilla/Library/Caches/org.scalameta.metals/bsp.trace.json
+2024.03.05 11:06:47 INFO  Attempting to connect to the build server...
+2024.03.05 11:06:47 INFO  Bloop uses /Users/ricardomaravilla/.jabba/jdk/openjdk@1.17.0/Contents/Home defined at /Users/ricardomaravilla/.bloop/bloop.json
+2024.03.05 11:06:47 INFO  Attempting to connect to the build server...
+2024.03.05 11:06:47 INFO  Bloop uses /Users/ricardomaravilla/.jabba/jdk/openjdk@1.17.0/Contents/Home defined at /Users/ricardomaravilla/.bloop/bloop.json
+2024.03.05 11:06:47 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/ricardomaravilla/Documents/GitHub/Streaming/streaming_cntry_price/onprem/project/project/.metals/bsp.trace.json or /Users/ricardomaravilla/Library/Caches/org.scalameta.metals/bsp.trace.json
+2024.03.05 11:06:47 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/ricardomaravilla/Documents/GitHub/Streaming/streaming_cntry_price/onprem/project/.metals/bsp.trace.json or /Users/ricardomaravilla/Library/Caches/org.scalameta.metals/bsp.trace.json
+2024.03.05 11:06:47 INFO  time: Connected to build server in 0.57s
+2024.03.05 11:06:47 INFO  Connected to Build server: Bloop v1.5.15
+2024.03.05 11:06:52 INFO  no build target found for /Users/ricardomaravilla/Documents/GitHub/Streaming/streaming_cntry_price/onprem/build.sbt. Using presentation compiler with project's scala-library version: 3.3.1
+mar. 05, 2024 11:06:52 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 11
+2024.03.05 11:06:59 INFO  time: indexed workspace in 7.17s
+2024.03.05 11:07:02 INFO  running '/usr/local/bin/sbt -Dbloop.export-jar-classifiers=sources bloopInstall'
+2024.03.05 11:07:02 ERROR WARNING: Unknown module: ALL-UNNAME specified to --add-opens
+2024.03.05 11:07:02 ERROR WARNING: Unknown module: ALL-UNNAME specified to --add-opens
+2024.03.05 11:07:04 INFO  [info] welcome to sbt 1.7.1 (Oracle Corporation Java 17)
+2024.03.05 11:07:06 INFO  time: code lens generation in 3.24s
+2024.03.05 11:07:06 INFO  time: code lens generation in 3.64s
+2024.03.05 11:07:06 INFO  time: code lens generation in 3.64s
+2024.03.05 11:07:06 INFO  time: code lens generation in 3.64s
+2024.03.05 11:07:06 INFO  time: code lens generation in 3.64s
+2024.03.05 11:07:06 INFO  [info] loading settings for project global-plugins from plugins.sbt ...
+2024.03.05 11:07:11 INFO  [info] loading global plugins from /Users/ricardomaravilla/.sbt/1.0/plugins
+2024.03.05 11:07:13 INFO  [info] loading project definition from /Users/ricardomaravilla/Documents/GitHub/Streaming/streaming_cntry_price/onprem/project/project/project/project
+2024.03.05 11:07:13 INFO  [info] loading settings for project onprem-build-build-build from metals.sbt ...
+2024.03.05 11:07:13 INFO  [info] loading project definition from /Users/ricardomaravilla/Documents/GitHub/Streaming/streaming_cntry_price/onprem/project/project/project
+2024.03.05 11:07:15 INFO  [info] loading settings for project onprem-build-build from metals.sbt ...
+2024.03.05 11:07:15 INFO  [info] loading project definition from /Users/ricardomaravilla/Documents/GitHub/Streaming/streaming_cntry_price/onprem/project/project
+2024.03.05 11:07:16 INFO  [success] Generated .bloop/onprem-build-build.json
+2024.03.05 11:07:16 INFO  [success] Total time: 1 s, completed 5 mar. 2024 11:07:16
+2024.03.05 11:07:16 INFO  [info] loading settings for project onprem-build from metals.sbt,pack.sbt,plugins.sbt ...
+2024.03.05 11:07:22 INFO  [info] loading project definition from /Users/ricardomaravilla/Documents/GitHub/Streaming/streaming_cntry_price/onprem/project
+2024.03.05 11:07:22 INFO  [success] Generated .bloop/onprem-build.json
+2024.03.05 11:07:22 INFO  [success] Total time: 1 s, completed 5 mar. 2024 11:07:22
+2024.03.05 11:07:22 INFO  [info] loading settings for project root from build.sbt ...
+2024.03.05 11:07:23 INFO  [info] set current project to streaming-cntry-price-onprem (in build file:/Users/ricardomaravilla/Documents/GitHub/Streaming/streaming_cntry_price/onprem/)
+2024.03.05 11:07:23 INFO  [warn] .env file not found (fileName=.env), no .env environment configured.
+2024.03.05 11:07:27 INFO  [warn] 
+2024.03.05 11:07:27 INFO  [warn] 	Note: Unresolved dependencies path:
+2024.03.05 11:07:27 INFO  [error] Couldn't run bloopGenerate. The issue could be caused by failing to compile the project.
+2024.03.05 11:07:27 INFO  [error] sbt.librarymanagement.ResolveException: Error downloading com.github.arcizon:spark-filetransfer_2.13:0.3.0
+2024.03.05 11:07:27 INFO  [error]   Not found
+2024.03.05 11:07:27 INFO  [error]   Not found
+2024.03.05 11:07:27 INFO  [error]   not found: /Users/ricardomaravilla/.ivy2/localcom.github.arcizon/spark-filetransfer_2.13/0.3.0/ivys/ivy.xml
+2024.03.05 11:07:27 INFO  [error]   not found: https://repo1.maven.org/maven2/com/github/arcizon/spark-filetransfer_2.13/0.3.0/spark-filetransfer_2.13-0.3.0.pom
+2024.03.05 11:07:27 INFO  [error]   not found: https://na.artifactory.swg-devops.com/artifactory/txo-dswim-esb-thirdparty-maven-local/com/github/arcizon/spark-filetransfer_2.13/0.3.0/spark-filetransfer_2.13-0.3.0.pom
+2024.03.05 11:07:27 INFO  [error]   not found: https://na.artifactory.swg-devops.com/artifactory/txo-dswim-esb-sbt-local/com/github/arcizon/spark-filetransfer_2.13/0.3.0/spark-filetransfer_2.13-0.3.0.pom
+2024.03.05 11:07:27 INFO  [error]   not found: https://packages.confluent.io/maven/com/github/arcizon/spark-filetransfer_2.13/0.3.0/spark-filetransfer_2.13-0.3.0.pom
+2024.03.05 11:07:27 INFO  [error]   forbidden: https://mvnrepository.com/com/github/arcizon/spark-filetransfer_2.13/0.3.0/spark-filetransfer_2.13-0.3.0.pom
+2024.03.05 11:07:27 INFO  [error]   not found: https://repo.artima.com/releases/com/github/arcizon/spark-filetransfer_2.13/0.3.0/spark-filetransfer_2.13-0.3.0.pom
+2024.03.05 11:07:27 INFO  [error] 	at lmcoursier.CoursierDependencyResolution.unresolvedWarningOrThrow(CoursierDependencyResolution.scala:345)
+2024.03.05 11:07:27 INFO  [error] 	at lmcoursier.CoursierDependencyResolution.$anonfun$update$38(CoursierDependencyResolution.scala:314)
+2024.03.05 11:07:27 INFO  [error] 	at scala.util.Either$LeftProjection.map(Either.scala:573)
+2024.03.05 11:07:27 INFO  [error] 	at lmcoursier.CoursierDependencyResolution.update(CoursierDependencyResolution.scala:314)
+2024.03.05 11:07:27 INFO  [error] 	at sbt.librarymanagement.DependencyResolution.update(DependencyResolution.scala:60)
+2024.03.05 11:07:27 INFO  [error] 	at sbt.internal.LibraryManagement$.resolve$1(LibraryManagement.scala:59)
+2024.03.05 11:07:27 INFO  [error] 	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$12(LibraryManagement.scala:133)
+2024.03.05 11:07:27 INFO  [error] 	at sbt.util.Tracked$.$anonfun$lastOutput$1(Tracked.scala:73)
+2024.03.05 11:07:27 INFO  [error] 	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$20(LibraryManagement.scala:146)
+2024.03.05 11:07:27 INFO  [error] 	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+2024.03.05 11:07:27 INFO  [error] 	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$11(LibraryManagement.scala:146)
+2024.03.05 11:07:27 INFO  [error] 	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$11$adapted(LibraryManagement.scala:127)
+2024.03.05 11:07:27 INFO  [error] 	at sbt.util.Tracked$.$anonfun$inputChangedW$1(Tracked.scala:219)
+2024.03.05 11:07:27 INFO  [error] 	at sbt.internal.LibraryManagement$.cachedUpdate(LibraryManagement.scala:160)
+2024.03.05 11:07:27 INFO  [error] 	at sbt.Classpaths$.$anonfun$updateTask0$1(Defaults.scala:3688)
+2024.03.05 11:07:27 INFO  [error] 	at scala.Function1.$anonfun$compose$1(Function1.scala:49)
+2024.03.05 11:07:27 INFO  [error] 	at sbt.internal.util.$tilde$greater.$anonfun$$u2219$1(TypeFunctions.scala:62)
+2024.03.05 11:07:27 INFO  [error] 	at sbt.std.Transform$$anon$4.work(Transform.scala:68)
+2024.03.05 11:07:27 INFO  [error] 	at sbt.Execute.$anonfun$submit$2(Execute.scala:282)
+2024.03.05 11:07:27 INFO  [error] 	at sbt.internal.util.ErrorHandling$.wideConvert(ErrorHandling.scala:23)
+2024.03.05 11:07:27 INFO  [error] 	at sbt.Execute.work(Execute.scala:291)
+2024.03.05 11:07:27 INFO  [error] 	at sbt.Execute.$anonfun$submit$1(Execute.scala:282)
+2024.03.05 11:07:27 INFO  [error] 	at sbt.ConcurrentRestrictions$$anon$4.$anonfun$submitValid$1(ConcurrentRestrictions.scala:265)
+2024.03.05 11:07:27 INFO  [error] 	at sbt.CompletionService$$anon$2.call(CompletionService.scala:64)
+2024.03.05 11:07:27 INFO  [error] 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+2024.03.05 11:07:27 INFO  [error] 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+2024.03.05 11:07:27 INFO  [error] 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+2024.03.05 11:07:27 INFO  [error] 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+2024.03.05 11:07:27 INFO  [error] 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+2024.03.05 11:07:27 INFO  [error] 	at java.base/java.lang.Thread.run(Thread.java:833)
+2024.03.05 11:07:27 INFO  [error] (update) sbt.librarymanagement.ResolveException: Error downloading com.github.arcizon:spark-filetransfer_2.13:0.3.0
+2024.03.05 11:07:27 INFO  [error]   Not found
+2024.03.05 11:07:27 INFO  [error]   Not found
+2024.03.05 11:07:27 INFO  [error]   not found: /Users/ricardomaravilla/.ivy2/localcom.github.arcizon/spark-filetransfer_2.13/0.3.0/ivys/ivy.xml
+2024.03.05 11:07:27 INFO  [error]   not found: https://repo1.maven.org/maven2/com/github/arcizon/spark-filetransfer_2.13/0.3.0/spark-filetransfer_2.13-0.3.0.pom
+2024.03.05 11:07:27 INFO  [error]   not found: https://na.artifactory.swg-devops.com/artifactory/txo-dswim-esb-thirdparty-maven-local/com/github/arcizon/spark-filetransfer_2.13/0.3.0/spark-filetransfer_2.13-0.3.0.pom
+2024.03.05 11:07:27 INFO  [error]   not found: https://na.artifactory.swg-devops.com/artifactory/txo-dswim-esb-sbt-local/com/github/arcizon/spark-filetransfer_2.13/0.3.0/spark-filetransfer_2.13-0.3.0.pom
+2024.03.05 11:07:27 INFO  [error]   not found: https://packages.confluent.io/maven/com/github/arcizon/spark-filetransfer_2.13/0.3.0/spark-filetransfer_2.13-0.3.0.pom
+2024.03.05 11:07:27 INFO  [error]   forbidden: https://mvnrepository.com/com/github/arcizon/spark-filetransfer_2.13/0.3.0/spark-filetransfer_2.13-0.3.0.pom
+2024.03.05 11:07:27 INFO  [error]   not found: https://repo.artima.com/releases/com/github/arcizon/spark-filetransfer_2.13/0.3.0/spark-filetransfer_2.13-0.3.0.pom
+2024.03.05 11:07:27 INFO  [error] Total time: 4 s, completed 5 mar. 2024 11:07:27
+2024.03.05 11:07:27 INFO  time: ran 'sbt bloopInstall' in 24s
+2024.03.05 11:07:27 ERROR sbt command failed: /usr/local/bin/sbt -Dbloop.export-jar-classifiers=sources bloopInstall
+2024.03.05 11:07:27 INFO  Disconnecting from Bloop session...
+2024.03.05 11:07:27 INFO  Shut down connection with build server.
+2024.03.05 11:07:27 INFO  Shut down connection with build server.
+2024.03.05 11:07:27 INFO  Shut down connection with build server.
+2024.03.05 11:07:27 INFO  Attempting to connect to the build server...
+2024.03.05 11:07:27 INFO  Bloop uses /Users/ricardomaravilla/.jabba/jdk/openjdk@1.17.0/Contents/Home defined at /Users/ricardomaravilla/.bloop/bloop.json
+2024.03.05 11:07:27 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/ricardomaravilla/Documents/GitHub/Streaming/streaming_cntry_price/onprem/.metals/bsp.trace.json or /Users/ricardomaravilla/Library/Caches/org.scalameta.metals/bsp.trace.json
+2024.03.05 11:07:27 INFO  Attempting to connect to the build server...
+2024.03.05 11:07:27 INFO  Bloop uses /Users/ricardomaravilla/.jabba/jdk/openjdk@1.17.0/Contents/Home defined at /Users/ricardomaravilla/.bloop/bloop.json
+2024.03.05 11:07:27 INFO  Attempting to connect to the build server...
+2024.03.05 11:07:27 INFO  Bloop uses /Users/ricardomaravilla/.jabba/jdk/openjdk@1.17.0/Contents/Home defined at /Users/ricardomaravilla/.bloop/bloop.json
+2024.03.05 11:07:27 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/ricardomaravilla/Documents/GitHub/Streaming/streaming_cntry_price/onprem/project/project/.metals/bsp.trace.json or /Users/ricardomaravilla/Library/Caches/org.scalameta.metals/bsp.trace.json
+2024.03.05 11:07:27 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/ricardomaravilla/Documents/GitHub/Streaming/streaming_cntry_price/onprem/project/.metals/bsp.trace.json or /Users/ricardomaravilla/Library/Caches/org.scalameta.metals/bsp.trace.json
+2024.03.05 11:07:27 INFO  time: Connected to build server in 45ms
+2024.03.05 11:07:27 INFO  Connected to Build server: Bloop v1.5.15
+2024.03.05 11:07:29 INFO  time: indexed workspace in 1.65s
+2024.03.05 11:07:32 INFO  time: code lens generation in 2.42s
+mar. 05, 2024 11:08:16 A. M. scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /Users/ricardomaravilla/Documents/GitHub/Streaming/streaming_cntry_price/onprem/.metals/.reports/metals-full/2024-03-05/r_compiler-error_(onprem-build)_11-08-16-971.md
+mar. 05, 2024 11:15:52 A. M. scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /Users/ricardomaravilla/Documents/GitHub/Streaming/streaming_cntry_price/onprem/.metals/.reports/metals-full/2024-03-05/r_compiler-error_(onprem-build)_11-15-52-900.md
+2024.03.05 11:16:05 INFO  running '/usr/local/bin/sbt -Dbloop.export-jar-classifiers=sources bloopInstall'
+2024.03.05 11:16:06 ERROR WARNING: Unknown module: ALL-UNNAME specified to --add-opens
+2024.03.05 11:16:06 ERROR WARNING: Unknown module: ALL-UNNAME specified to --add-opens
+2024.03.05 11:16:07 INFO  [info] welcome to sbt 1.7.1 (Oracle Corporation Java 17)
+2024.03.05 11:16:07 INFO  [info] loading settings for project global-plugins from plugins.sbt ...
+2024.03.05 11:16:13 INFO  [info] loading global plugins from /Users/ricardomaravilla/.sbt/1.0/plugins
+2024.03.05 11:16:15 INFO  [info] loading project definition from /Users/ricardomaravilla/Documents/GitHub/Streaming/streaming_cntry_price/onprem/project/project/project/project
+2024.03.05 11:16:15 INFO  [info] loading settings for project onprem-build-build-build from metals.sbt ...
+2024.03.05 11:16:15 INFO  [info] loading project definition from /Users/ricardomaravilla/Documents/GitHub/Streaming/streaming_cntry_price/onprem/project/project/project
+2024.03.05 11:16:16 INFO  [info] loading settings for project onprem-build-build from metals.sbt ...
+2024.03.05 11:16:16 INFO  [info] loading project definition from /Users/ricardomaravilla/Documents/GitHub/Streaming/streaming_cntry_price/onprem/project/project
+2024.03.05 11:16:17 INFO  [success] Generated .bloop/onprem-build-build.json
+2024.03.05 11:16:17 INFO  [success] Total time: 1 s, completed 5 mar. 2024 11:16:17
+2024.03.05 11:16:17 INFO  [info] loading settings for project onprem-build from metals.sbt,pack.sbt,plugins.sbt ...
+2024.03.05 11:16:23 INFO  [info] loading project definition from /Users/ricardomaravilla/Documents/GitHub/Streaming/streaming_cntry_price/onprem/project
+2024.03.05 11:16:23 INFO  [success] Generated .bloop/onprem-build.json
+2024.03.05 11:16:23 INFO  [success] Total time: 0 s, completed 5 mar. 2024 11:16:23
+2024.03.05 11:16:25 INFO  [info] loading settings for project root from build.sbt ...
+2024.03.05 11:16:25 INFO  [info] set current project to streaming-cntry-price-onprem (in build file:/Users/ricardomaravilla/Documents/GitHub/Streaming/streaming_cntry_price/onprem/)
+2024.03.05 11:16:25 INFO  [warn] .env file not found (fileName=.env), no .env environment configured.
+2024.03.05 11:16:26 INFO  [success] Generated .bloop/root.json
+2024.03.05 11:16:26 INFO  [success] Generated .bloop/root-test.json
+2024.03.05 11:16:26 INFO  [success] Total time: 1 s, completed 5 mar. 2024 11:16:26
+2024.03.05 11:16:26 INFO  time: ran 'sbt bloopInstall' in 21s
+2024.03.05 11:16:26 INFO  Disconnecting from Bloop session...
+2024.03.05 11:16:26 INFO  Shut down connection with build server.
+2024.03.05 11:16:26 INFO  Shut down connection with build server.
+2024.03.05 11:16:26 INFO  Shut down connection with build server.
+2024.03.05 11:16:26 INFO  Attempting to connect to the build server...
+2024.03.05 11:16:26 INFO  Bloop uses /Users/ricardomaravilla/.jabba/jdk/openjdk@1.17.0/Contents/Home defined at /Users/ricardomaravilla/.bloop/bloop.json
+2024.03.05 11:16:26 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/ricardomaravilla/Documents/GitHub/Streaming/streaming_cntry_price/onprem/.metals/bsp.trace.json or /Users/ricardomaravilla/Library/Caches/org.scalameta.metals/bsp.trace.json
+2024.03.05 11:16:26 INFO  Attempting to connect to the build server...
+2024.03.05 11:16:26 INFO  Bloop uses /Users/ricardomaravilla/.jabba/jdk/openjdk@1.17.0/Contents/Home defined at /Users/ricardomaravilla/.bloop/bloop.json
+2024.03.05 11:16:26 INFO  Attempting to connect to the build server...
+2024.03.05 11:16:26 INFO  Bloop uses /Users/ricardomaravilla/.jabba/jdk/openjdk@1.17.0/Contents/Home defined at /Users/ricardomaravilla/.bloop/bloop.json
+2024.03.05 11:16:26 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/ricardomaravilla/Documents/GitHub/Streaming/streaming_cntry_price/onprem/project/.metals/bsp.trace.json or /Users/ricardomaravilla/Library/Caches/org.scalameta.metals/bsp.trace.json
+2024.03.05 11:16:26 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/ricardomaravilla/Documents/GitHub/Streaming/streaming_cntry_price/onprem/project/project/.metals/bsp.trace.json or /Users/ricardomaravilla/Library/Caches/org.scalameta.metals/bsp.trace.json
+2024.03.05 11:16:26 INFO  time: Connected to build server in 40ms
+2024.03.05 11:16:26 INFO  Connected to Build server: Bloop v1.5.15
+2024.03.05 11:16:29 INFO  time: indexed workspace in 2.84s
+2024.03.05 11:16:29 WARN  no build target for: /Users/ricardomaravilla/Documents/GitHub/Streaming/Pricing_to_Marketplace/src/main/scala/ApiConnector.scala
+2024.03.05 11:16:32 INFO  skipping build import with status 'Installed'
+2024.03.05 11:16:33 INFO  time: code lens generation in 3.37s
+2024.03.05 11:16:33 INFO  time: code lens generation in 3.48s
+2024.03.05 11:16:47 INFO  compiling root (8 scala sources)
+2024.03.05 11:16:47 INFO  time: compiled root in 0.27s
+2024.03.05 11:16:47 INFO  compiling root (8 scala sources)
+2024.03.05 11:16:47 INFO  time: compiled root in 0.17s
+2024.03.05 11:17:01 INFO  compiling root (8 scala sources)
+2024.03.05 11:17:01 INFO  time: compiled root in 0.35s
+2024.03.05 11:19:35 INFO  compiling root (8 scala sources)
+2024.03.05 11:19:35 INFO  time: compiled root in 0.26s
+2024.03.05 11:19:42 ERROR Failed to tokenize input for semantic tokens for /Users/ricardomaravilla/Documents/GitHub/Streaming/streaming_cntry_price/onprem/src/main/scala/com/ibm/dswdiaods/pricing_onprem/ApiConnector.scala
+scala.meta.tokenizers.TokenizeException: <input>:41: error: unclosed string literal
+                api_url + "/api/,
+                          ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.getStringLit(LegacyScanner.scala:553)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchDoubleQuote$1(LegacyScanner.scala:372)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:376)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:211)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:1011)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:24)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:17)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:962)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:17)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:332)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:30)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:541)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:833)
+
+2024.03.05 11:19:56 INFO  compiling root (8 scala sources)
+2024.03.05 11:19:56 INFO  time: compiled root in 0.33s
+mar. 05, 2024 11:20:09 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 420
+2024.03.05 11:20:27 INFO  compiling root (8 scala sources)
+2024.03.05 11:20:27 INFO  time: compiled root in 0.28s
+2024.03.05 11:20:54 INFO  compiling root (8 scala sources)
+2024.03.05 11:20:54 INFO  time: compiled root in 0.29s
+mar. 05, 2024 11:21:02 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 614
+2024.03.05 11:21:04 WARN  Using indexes to guess the definition of ApiConnector
+2024.03.05 11:21:05 INFO  compiling root (8 scala sources)
+2024.03.05 11:21:05 INFO  time: compiled root in 0.23s
+mar. 05, 2024 11:50:41 A. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 641
+2024.03.05 11:59:16 INFO  compiling root (8 scala sources)
+2024.03.05 11:59:16 INFO  time: compiled root in 0.26s
+2024.03.05 12:00:32 INFO  compiling root (8 scala sources)
+2024.03.05 12:00:32 INFO  time: compiled root in 0.23s
+2024.03.05 12:00:55 INFO  compiling root (8 scala sources)
+2024.03.05 12:00:55 INFO  time: compiled root in 0.67s
+2024.03.05 12:01:07 INFO  compiling root (8 scala sources)
+2024.03.05 12:01:07 INFO  time: compiled root in 0.3s
+2024.03.05 12:01:19 INFO  compiling root (8 scala sources)
+2024.03.05 12:01:19 INFO  time: compiled root in 0.26s
+2024.03.05 12:01:36 INFO  compiling root (8 scala sources)
+2024.03.05 12:01:36 INFO  time: compiled root in 0.24s
+mar. 05, 2024 12:04:23 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 964
+2024.03.05 12:04:25 INFO  compiling root (8 scala sources)
+2024.03.05 12:04:25 INFO  time: compiled root in 0.24s
+mar. 05, 2024 12:05:27 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1001
+mar. 05, 2024 12:05:27 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1003
+2024.03.05 12:05:37 INFO  compiling root (8 scala sources)
+2024.03.05 12:05:37 INFO  time: compiled root in 0.27s
+2024.03.05 12:05:51 INFO  compiling root (8 scala sources)
+2024.03.05 12:05:51 INFO  time: compiled root in 0.26s
+2024.03.05 12:05:54 INFO  compiling root (8 scala sources)
+2024.03.05 12:05:54 INFO  time: compiled root in 0.23s
+2024.03.05 12:06:16 INFO  compiling root (8 scala sources)
+2024.03.05 12:06:16 INFO  time: compiled root in 0.24s
+2024.03.05 12:06:26 INFO  compiling root (8 scala sources)
+2024.03.05 12:06:26 INFO  time: compiled root in 0.28s
+something's wrong: no file:///Users/ricardomaravilla/Documents/GitHub/Streaming/streaming_cntry_price/onprem/src/main/scala/com/ibm/dswdiaods/pricing_onprem/OnPrem.scala in Seq[<error>]RangePosition(file:///Users/ricardomaravilla/Documents/GitHub/Streaming/streaming_cntry_price/onprem/src/main/scala/com/ibm/dswdiaods/pricing_onprem/OnPrem.scala, 29800, 29800, 29813)
+something's wrong: no file:///Users/ricardomaravilla/Documents/GitHub/Streaming/streaming_cntry_price/onprem/src/main/scala/com/ibm/dswdiaods/pricing_onprem/OnPrem.scala in Seq[<error>]RangePosition(file:///Users/ricardomaravilla/Documents/GitHub/Streaming/streaming_cntry_price/onprem/src/main/scala/com/ibm/dswdiaods/pricing_onprem/OnPrem.scala, 29800, 29800, 29806)
+mar. 05, 2024 12:06:36 P. M. scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /Users/ricardomaravilla/Documents/GitHub/Streaming/streaming_cntry_price/onprem/.metals/.reports/metals-full/2024-03-05/r_compiler-error_(root)_12-06-36-110.md
+2024.03.05 12:06:37 INFO  compiling root (8 scala sources)
+2024.03.05 12:06:37 INFO  time: compiled root in 0.28s
+2024.03.05 12:06:43 INFO  compiling root (8 scala sources)
+2024.03.05 12:06:43 INFO  time: compiled root in 0.27s
+2024.03.05 12:06:49 INFO  compiling root (8 scala sources)
+2024.03.05 12:06:49 INFO  time: compiled root in 0.34s
+2024.03.05 12:06:57 INFO  compiling root (8 scala sources)
+2024.03.05 12:06:57 INFO  time: compiled root in 0.27s
+2024.03.05 12:07:44 INFO  compiling root (8 scala sources)
+2024.03.05 12:07:44 INFO  time: compiled root in 0.24s
+2024.03.05 12:08:13 INFO  compiling root (8 scala sources)
+2024.03.05 12:08:13 INFO  time: compiled root in 0.23s
+2024.03.05 12:08:15 INFO  compiling root (8 scala sources)
+2024.03.05 12:08:15 INFO  time: compiled root in 0.24s
+2024.03.05 12:09:38 INFO  compiling root (8 scala sources)
+2024.03.05 12:09:38 INFO  time: compiled root in 0.24s
+2024.03.05 12:09:46 INFO  compiling root (8 scala sources)
+2024.03.05 12:09:46 INFO  time: compiled root in 0.32s
+mar. 05, 2024 12:11:58 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1774
+mar. 05, 2024 12:11:58 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1775
+mar. 05, 2024 12:11:58 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1782
+mar. 05, 2024 12:12:00 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1792
+mar. 05, 2024 12:12:02 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1807
+mar. 05, 2024 12:12:02 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1808
+mar. 05, 2024 12:12:02 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1809
+mar. 05, 2024 12:12:02 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1812
+mar. 05, 2024 12:12:02 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1813
+2024.03.05 12:12:02 INFO  compiling root (8 scala sources)
+2024.03.05 12:12:02 INFO  time: compiled root in 0.32s
+2024.03.05 12:25:24 ERROR Failed to tokenize input for semantic tokens for /Users/ricardomaravilla/Documents/GitHub/Streaming/streaming_cntry_price/onprem/src/main/scala/com/ibm/dswdiaods/pricing_onprem/OnPrem.scala
+scala.meta.tokenizers.TokenizeException: <input>:848: error: unclosed string literal
+			logger.error("Failed to send
+                ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.getStringLit(LegacyScanner.scala:553)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchDoubleQuote$1(LegacyScanner.scala:372)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:376)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:211)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:1011)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:24)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:17)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:962)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:17)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:332)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:30)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:541)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:833)
+
+2024.03.05 12:25:25 ERROR Failed to tokenize input for semantic tokens for /Users/ricardomaravilla/Documents/GitHub/Streaming/streaming_cntry_price/onprem/src/main/scala/com/ibm/dswdiaods/pricing_onprem/OnPrem.scala
+scala.meta.tokenizers.TokenizeException: <input>:848: error: unclosed string literal
+			logger.error("Failed to send 
+                ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.getStringLit(LegacyScanner.scala:553)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchDoubleQuote$1(LegacyScanner.scala:372)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:376)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:211)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:1011)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:24)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:17)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:962)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:17)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:332)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:30)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:541)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:833)
+
+2024.03.05 12:25:35 INFO  compiling root (8 scala sources)
+2024.03.05 12:25:35 INFO  time: compiled root in 0.27s
+2024.03.06 17:25:43 INFO  Shutting down server
+2024.03.06 17:25:43 INFO  shutting down Metals
+2024.03.06 17:25:43 INFO  Exiting server
+2024.03.29 13:50:20 INFO  Started: Metals version 1.2.2 in folders '/Users/ricardomaravilla/Documents/GitHub/Streaming/streaming_cntry_price/onprem' for client Visual Studio Code 1.87.2.
+13:50:22.353 [pool-1-thread-1] INFO org.flywaydb.core.internal.license.VersionPrinter -- Flyway Community Edition 9.22.3 by Redgate
+13:50:22.359 [pool-1-thread-1] INFO org.flywaydb.core.internal.license.VersionPrinter -- See release notes here: https://rd.gt/416ObMi
+13:50:22.359 [pool-1-thread-1] INFO org.flywaydb.core.internal.license.VersionPrinter -- 
+13:50:22.363 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning for classpath resources at 'classpath:db/callback' ...
+13:50:22.364 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Determining location urls for classpath:db/callback using ClassLoader jdk.internal.loader.ClassLoaders$AppClassLoader@5ffd2b27 ...
+13:50:22.364 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Unable to resolve location classpath:db/callback.
+13:50:22.364 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning for classpath resources at 'classpath:db/migration' ...
+13:50:22.364 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Determining location urls for classpath:db/migration using ClassLoader jdk.internal.loader.ClassLoaders$AppClassLoader@5ffd2b27 ...
+13:50:22.365 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning URL: jar:file:/Users/ricardomaravilla/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalameta/metals_2.13/1.2.2/metals_2.13-1.2.2.jar!/db/migration
+13:50:22.369 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/
+13:50:22.370 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V1__Create_tables.sql
+13:50:22.370 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V2__Server_discovery.sql
+13:50:22.370 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V3__Jar_symbols.sql
+13:50:22.370 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V4__Fingerprints.sql
+13:50:22.371 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning for classes at classpath:db/migration
+13:50:22.381 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+13:50:22.381 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V3__Jar_symbols.sql
+13:50:22.382 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V4__Fingerprints.sql
+13:50:22.382 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V1__Create_tables.sql
+13:50:22.383 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V2__Server_discovery.sql
+13:50:22.495 [pool-1-thread-1] INFO org.flywaydb.core.FlywayExecutor -- Database: jdbc:h2:file:/Users/ricardomaravilla/Documents/GitHub/Streaming/streaming_cntry_price/onprem/.metals/metals (H2 2.2)
+13:50:22.495 [pool-1-thread-1] DEBUG org.flywaydb.core.FlywayExecutor -- Driver: H2 JDBC Driver 2.2.224 (2023-09-17)
+13:50:22.495 [pool-1-thread-1] DEBUG org.flywaydb.core.FlywayExecutor -- DDL Transactions Supported: false
+13:50:22.496 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.schemahistory.SchemaHistoryFactory -- Schemas: 
+13:50:22.497 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.schemahistory.SchemaHistoryFactory -- Default schema: null
+13:50:22.506 [pool-1-thread-1] WARN org.flywaydb.core.internal.database.base.Database -- Flyway upgrade recommended: H2 2.2.224 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+13:50:22.508 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.callback.SqlScriptCallbackFactory -- Scanning for SQL callbacks ...
+13:50:22.508 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+13:50:22.528 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.command.DbValidate -- Validating migrations ...
+13:50:22.536 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+13:50:22.553 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V3__Jar_symbols.sql (filename: V3__Jar_symbols.sql)
+13:50:22.553 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V4__Fingerprints.sql (filename: V4__Fingerprints.sql)
+13:50:22.553 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V1__Create_tables.sql (filename: V1__Create_tables.sql)
+13:50:22.553 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V2__Server_discovery.sql (filename: V2__Server_discovery.sql)
+13:50:22.553 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+13:50:22.555 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V3__Jar_symbols.sql (filename: V3__Jar_symbols.sql)
+13:50:22.556 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V4__Fingerprints.sql (filename: V4__Fingerprints.sql)
+13:50:22.557 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V1__Create_tables.sql (filename: V1__Create_tables.sql)
+13:50:22.557 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V2__Server_discovery.sql (filename: V2__Server_discovery.sql)
+13:50:22.557 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+13:50:22.584 [pool-1-thread-1] INFO org.flywaydb.core.internal.command.DbValidate -- Successfully validated 4 migrations (execution time 00:00.054s)
+13:50:22.588 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.command.DbSchemas -- Skipping creation of existing schema: "PUBLIC"
+13:50:22.602 [pool-1-thread-1] INFO org.flywaydb.core.internal.command.DbMigrate -- Current version of schema "PUBLIC": 4
+13:50:22.617 [pool-1-thread-1] INFO org.flywaydb.core.internal.command.DbMigrate -- Schema "PUBLIC" is up to date. No migration necessary.
+13:50:23.268 [pool-1-thread-1] DEBUG org.flywaydb.core.FlywayExecutor -- Memory usage: 37 of 165M
+mar. 29, 2024 1:50:24 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4
+2024.03.29 13:50:24 INFO  skipping build import with status 'Installed'
+2024.03.29 13:50:24 INFO  Attempting to connect to the build server...
+2024.03.29 13:50:24 INFO  Bloop uses /Users/ricardomaravilla/.jabba/jdk/openjdk@1.17.0/Contents/Home defined at /Users/ricardomaravilla/.bloop/bloop.json
+2024.03.29 13:50:24 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/ricardomaravilla/Documents/GitHub/Streaming/streaming_cntry_price/onprem/.metals/bsp.trace.json or /Users/ricardomaravilla/Library/Caches/org.scalameta.metals/bsp.trace.json
+2024.03.29 13:50:24 INFO  Attempting to connect to the build server...
+2024.03.29 13:50:24 INFO  Bloop uses /Users/ricardomaravilla/.jabba/jdk/openjdk@1.17.0/Contents/Home defined at /Users/ricardomaravilla/.bloop/bloop.json
+2024.03.29 13:50:24 INFO  Attempting to connect to the build server...
+2024.03.29 13:50:24 INFO  Bloop uses /Users/ricardomaravilla/.jabba/jdk/openjdk@1.17.0/Contents/Home defined at /Users/ricardomaravilla/.bloop/bloop.json
+2024.03.29 13:50:24 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/ricardomaravilla/Documents/GitHub/Streaming/streaming_cntry_price/onprem/project/project/.metals/bsp.trace.json or /Users/ricardomaravilla/Library/Caches/org.scalameta.metals/bsp.trace.json
+2024.03.29 13:50:25 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/ricardomaravilla/Documents/GitHub/Streaming/streaming_cntry_price/onprem/project/.metals/bsp.trace.json or /Users/ricardomaravilla/Library/Caches/org.scalameta.metals/bsp.trace.json
+2024.03.29 13:50:25 INFO  time: Connected to build server in 0.6s
+2024.03.29 13:50:25 INFO  Connected to Build server: Bloop v1.5.15
+2024.03.29 13:50:29 INFO  no build target found for /Users/ricardomaravilla/Documents/GitHub/Streaming/streaming_cntry_price/onprem/src/main/scala/com/ibm/dswdiaods/pricing_onprem/OnPrem.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.03.29 13:50:38 INFO  time: indexed workspace in 8.76s
+2024.03.29 13:50:38 WARN  no build target for: /Users/ricardomaravilla/Documents/GitHub/Streaming/Pricing_to_Marketplace/src/main/scala/ApiConnector.scala
+2024.03.29 13:50:38 INFO  compiling root (8 scala sources)
+2024.03.29 13:50:42 INFO  time: compiled root in 3.29s
+2024.03.29 13:50:42 INFO  compiling root (8 scala sources)
+2024.03.29 13:50:43 INFO  time: compiled root in 1.16s
+2024.03.29 13:50:44 INFO  time: code lens generation in 1.63s
+2024.03.29 13:50:44 INFO  time: code lens generation in 1.63s
+2024.03.29 13:50:44 INFO  time: code lens generation in 1.63s
+2024.03.29 13:50:44 INFO  time: code lens generation in 1.63s
+2024.04.01 09:05:41 INFO  Shutting down server
+2024.04.01 09:05:41 INFO  shutting down Metals
+2024.04.01 09:05:42 INFO  Exiting server

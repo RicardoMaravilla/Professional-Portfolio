@@ -1,0 +1,38 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: db2redis
+  namespace: db2redis
+  labels:
+    app: db2redis
+spec:
+  selector:
+    matchLabels:
+      app: db2redis
+  template:
+    metadata:
+      name: db2redis
+      labels:
+        app: db2redis
+        version: "0.1"
+    spec:
+      containers:
+      - name: db2redis
+        image: txo-dswim-esb-docker-local.artifactory.swg-devops.com/db2redis:0.11
+        imagePullPolicy: Always
+        envFrom:
+          - configMapRef:
+              name: db2redis-configmap
+          - secretRef:
+              name: SM_URL
+          - secretRef:
+              name: SM_APIKEY
+        volumeMounts:
+          - name: keystore
+            mountPath: /etc/keystore
+      volumes:
+      - name: keystore
+        secret:
+          secretName: keystore
+      imagePullSecrets:
+      - name: regcred

@@ -1,0 +1,26 @@
+# this is an official Python runtime, used as the parent image
+#FROM python:latest
+FROM registry.access.redhat.com/ubi9/python-311:1-41
+
+USER root
+
+# set the working directory in the container to /app
+WORKDIR /app
+
+ADD ./requirements.txt /app/requirements.txt
+RUN pip3 install --trusted-host pypi.python.org -r /app/requirements.txt && \
+    mkdir -p ./logs && \
+    chown -R root: ./logs
+
+RUN chmod 777 ./logs
+RUN chmod 777 /app
+
+# add the current directory to the container as /app
+ADD . /app
+
+# set timezone to ET
+ENV TZ 'America/New_York'
+
+# execute the Flask app
+CMD ["python", "src/load_report.py", "-f"]
+USER root

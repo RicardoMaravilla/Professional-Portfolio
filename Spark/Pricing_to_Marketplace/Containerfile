@@ -1,0 +1,39 @@
+####################################################################################
+#### Name: Dockerfile                                                          #####
+#### Description: Definition for isc-entitlement-renewals imaage               #####
+#### Created by: Octavio Sanchez <octavio.sanchez@ibm.com>                     #####
+#### Created Date: 2023/11/16                                                  #####
+#### Modification:                                                             #####
+####   date         owner                          description                 #####
+####################################################################################
+
+ARG build_base_image
+ARG run_base_image
+
+FROM ${build_base_image} AS builder
+
+ARG jarfile
+ARG sbt_command
+
+WORKDIR /app
+COPY build.sbt .
+COPY .jvmopts .
+COPY src ./src
+COPY project/plugins.sbt ./project/plugins.sbt
+RUN --mount=type=secret,id=credentials,target=/root/.sbt/1.0/credentials.sbt \
+    --mount=type=secret,id=env,target=/app/.env \
+    --mount=type=secret,id=config,target=/app/dswdia_config.conf \
+    --mount=type=secret,id=jks,target=/app/ssl_key.jks \
+    ${sbt_command} && \
+    rm $jarfile
+
+FROM ${run_base_image}
+
+USER root
+
+COPY --from=builder /app/target/pack/lib /opt/spark/work-dir/dependencies
+COPY --from=builder /app/src/main/resources/log4j2.properties /opt/spark/work-dir/log
+COPY --from=builder /app/target/scala-*/*.jar /opt/spark/work-dir
+RUN chmod -R 0777 /opt/spark/work-dir
+
+USER default

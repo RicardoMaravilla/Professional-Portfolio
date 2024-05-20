@@ -1,0 +1,128 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(pack, Some(15b8fd65-dbd4-408a-bf5c-62c01960ac0b), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / pack[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 4 Scala sources to /Users/ricardomaravilla/Documents/GitHub/Streaming/streaming_cntry_price/onprem/target/scala-2.12/classes ...[0m
+[0m[[0m[33mwarn[0m] [0m[0mmultiple main classes detected: run 'show discoveredMainClasses' to see the list[0m
+[0m[[0m[0minfo[0m] [0m[0m[Streaming Cntry Price Onprem] Creating a distributable package in target/pack[0m
+[0m[[0m[0minfo[0m] [0m[0m[Streaming Cntry Price Onprem] Copying libraries to target/pack/lib[0m
+[0m[[0m[0minfo[0m] [0m[0m[Streaming Cntry Price Onprem] project jars:[0m
+[0m[[0m[0minfo[0m] [0m[0mtarget/scala-2.12/streaming-cntry-price-onprem_2.12-1.0.jar[0m
+[0m[[0m[0minfo[0m] [0m[0m[Streaming Cntry Price Onprem] Copying project dependencies:[0m
+[0m[[0m[0minfo[0m] [0m[0mcom.bettercloud:vault-java-driver:5.1.0[0m
+[0m[[0m[0minfo[0m] [0m[0mcom.fasterxml.jackson.core:jackson-annotations:2.13.3[0m
+[0m[[0m[0minfo[0m] [0m[0mcom.fasterxml.jackson.core:jackson-core:2.13.3[0m
+[0m[[0m[0minfo[0m] [0m[0mcom.fasterxml.jackson.core:jackson-databind:2.13.3[0m
+[0m[[0m[0minfo[0m] [0m[0mcom.fasterxml.jackson.dataformat:jackson-dataformat-csv:2.13.3[0m
+[0m[[0m[0minfo[0m] [0m[0mcom.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.11.1[0m
+[0m[[0m[0minfo[0m] [0m[0mcom.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.13.3[0m
+[0m[[0m[0minfo[0m] [0m[0mcom.fasterxml.jackson.module:jackson-module-scala_2.12:2.13.3[0m
+[0m[[0m[0minfo[0m] [0m[0mcom.github.luben:zstd-jni:1.4.9-1[0m
+[0m[[0m[0minfo[0m] [0m[0mcom.google.code.findbugs:jsr305:3.0.2[0m
+[0m[[0m[0minfo[0m] [0m[0mcom.google.code.gson:gson:2.8.9[0m
+[0m[[0m[0minfo[0m] [0m[0mcom.google.errorprone:error_prone_annotations:2.5.1[0m
+[0m[[0m[0minfo[0m] [0m[0mcom.google.guava:failureaccess:1.0.1[0m
+[0m[[0m[0minfo[0m] [0m[0mcom.google.guava:guava:30.1.1-jre[0m
+[0m[[0m[0minfo[0m] [0m[0mcom.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava[0m
+[0m[[0m[0minfo[0m] [0m[0mcom.google.j2objc:j2objc-annotations:1.3[0m
+[0m[[0m[0minfo[0m] [0m[0mcom.ibm.cloud:cloudant-common:0.2.0[0m
+[0m[[0m[0minfo[0m] [0m[0mcom.ibm.cloud:cloudant:0.2.0[0m
+[0m[[0m[0minfo[0m] [0m[0mcom.ibm.cloud:sdk-core:9.17.3[0m
+[0m[[0m[0minfo[0m] [0m[0mcom.ibm.db2:jcc:11.5.7.0[0m
+[0m[[0m[0minfo[0m] [0m[0mcom.ibm.dswdia:core_2.12:1.0.0[0m
+[0m[[0m[0minfo[0m] [0m[0mcom.squareup.okhttp3:logging-interceptor:4.10.0[0m
+[0m[[0m[0minfo[0m] [0m[0mcom.squareup.okhttp3:okhttp-urlconnection:4.10.0[0m
+[0m[[0m[0minfo[0m] [0m[0mcom.squareup.okhttp3:okhttp:4.10.0[0m
+[0m[[0m[0minfo[0m] [0m[0mcom.squareup.okio:okio-jvm:3.0.0[0m
+[0m[[0m[0minfo[0m] [0m[0mcom.thoughtworks.paranamer:paranamer:2.8[0m
+[0m[[0m[0minfo[0m] [0m[0mcom.typesafe:config:1.4.2[0m
+[0m[[0m[0minfo[0m] [0m[0mcom.typesafe.scala-logging:scala-logging_2.12:3.9.4[0m
+[0m[[0m[0minfo[0m] [0m[0mcom.yammer.metrics:metrics-core:2.2.0[0m
+[0m[[0m[0minfo[0m] [0m[0mcom.zaxxer:HikariCP:2.5.1[0m
+[0m[[0m[0minfo[0m] [0m[0mcommons-cli:commons-cli:1.4[0m
+[0m[[0m[0minfo[0m] [0m[0mcommons-codec:commons-codec:1.15[0m
+[0m[[0m[0minfo[0m] [0m[0mcommons-io:commons-io:2.7[0m
+[0m[[0m[0minfo[0m] [0m[0mcommons-logging:commons-logging:1.1.3[0m
+[0m[[0m[0minfo[0m] [0m[0mio.confluent:common-utils:6.2.1[0m
+[0m[[0m[0minfo[0m] [0m[0mio.confluent:kafka-avro-serializer:6.2.1[0m
+[0m[[0m[0minfo[0m] [0m[0mio.confluent:kafka-schema-registry-client:6.2.1[0m
+[0m[[0m[0minfo[0m] [0m[0mio.confluent:kafka-schema-serializer:6.2.1[0m
+[0m[[0m[0minfo[0m] [0m[0mio.dropwizard.metrics:metrics-core:4.1.12.1[0m
+[0m[[0m[0minfo[0m] [0m[0mio.netty:netty-buffer:4.1.63.Final[0m
+[0m[[0m[0minfo[0m] [0m[0mio.netty:netty-codec:4.1.63.Final[0m
+[0m[[0m[0minfo[0m] [0m[0mio.netty:netty-common:4.1.63.Final[0m
+[0m[[0m[0minfo[0m] [0m[0mio.netty:netty-handler:4.1.63.Final[0m
+[0m[[0m[0minfo[0m] [0m[0mio.netty:netty-resolver:4.1.63.Final[0m
+[0m[[0m[0minfo[0m] [0m[0mio.netty:netty-transport-native-epoll:4.1.63.Final[0m
+[0m[[0m[0minfo[0m] [0m[0mio.netty:netty-transport-native-unix-common:4.1.63.Final[0m
+[0m[[0m[0minfo[0m] [0m[0mio.netty:netty-transport:4.1.63.Final[0m
+[0m[[0m[0minfo[0m] [0m[0mio.reactivex.rxjava2:rxjava:2.2.7[0m
+[0m[[0m[0minfo[0m] [0m[0mio.swagger:swagger-annotations:1.6.2[0m
+[0m[[0m[0minfo[0m] [0m[0mio.swagger:swagger-core:1.6.2[0m
+[0m[[0m[0minfo[0m] [0m[0mio.swagger:swagger-models:1.6.2[0m
+[0m[[0m[0minfo[0m] [0m[0mjakarta.annotation:jakarta.annotation-api:1.3.5[0m
+[0m[[0m[0minfo[0m] [0m[0mjakarta.ws.rs:jakarta.ws.rs-api:2.1.6[0m
+[0m[[0m[0minfo[0m] [0m[0mnet.sf.jopt-simple:jopt-simple:5.0.4[0m
+[0m[[0m[0minfo[0m] [0m[0mnet.sourceforge.argparse4j:argparse4j:0.7.0[0m
+[0m[[0m[0minfo[0m] [0m[0morg.apache.avro:avro:1.11.1[0m
+[0m[[0m[0minfo[0m] [0m[0morg.apache.commons:commons-compress:1.21[0m
+[0m[[0m[0minfo[0m] [0m[0morg.apache.commons:commons-lang3:3.8.1[0m
+[0m[[0m[0minfo[0m] [0m[0morg.apache.commons:commons-pool2:2.11.1[0m
+[0m[[0m[0minfo[0m] [0m[0morg.apache.hadoop:hadoop-client-api:3.3.2[0m
+[0m[[0m[0minfo[0m] [0m[0morg.apache.hadoop:hadoop-client-runtime:3.3.2[0m
+[0m[[0m[0minfo[0m] [0m[0morg.apache.kafka:kafka-clients:6.2.1-ccs[0m
+[0m[[0m[0minfo[0m] [0m[0morg.apache.kafka:kafka-metadata:3.3.1[0m
+[0m[[0m[0minfo[0m] [0m[0morg.apache.kafka:kafka-raft:3.3.1[0m
+[0m[[0m[0minfo[0m] [0m[0morg.apache.kafka:kafka-server-common:3.3.1[0m
+[0m[[0m[0minfo[0m] [0m[0morg.apache.kafka:kafka-storage-api:3.3.1[0m
+[0m[[0m[0minfo[0m] [0m[0morg.apache.kafka:kafka-storage:3.3.1[0m
+[0m[[0m[0minfo[0m] [0m[0morg.apache.kafka:kafka_2.12:3.3.1[0m
+[0m[[0m[0minfo[0m] [0m[0morg.apache.spark:spark-avro_2.12:3.3.0[0m
+[0m[[0m[0minfo[0m] [0m[0morg.apache.spark:spark-sql-kafka-0-10_2.12:3.3.0[0m
+[0m[[0m[0minfo[0m] [0m[0morg.apache.spark:spark-tags_2.12:3.3.0[0m
+[0m[[0m[0minfo[0m] [0m[0morg.apache.spark:spark-token-provider-kafka-0-10_2.12:3.3.0[0m
+[0m[[0m[0minfo[0m] [0m[0morg.apache.yetus:audience-annotations:0.5.0[0m
+[0m[[0m[0minfo[0m] [0m[0morg.apache.zookeeper:zookeeper-jute:3.6.3[0m
+[0m[[0m[0minfo[0m] [0m[0morg.apache.zookeeper:zookeeper:3.6.3[0m
+[0m[[0m[0minfo[0m] [0m[0morg.bitbucket.b_c:jose4j:0.7.9[0m
+[0m[[0m[0minfo[0m] [0m[0morg.checkerframework:checker-qual:3.8.0[0m
+[0m[[0m[0minfo[0m] [0m[0morg.glassfish.hk2.external:jakarta.inject:2.6.1[0m
+[0m[[0m[0minfo[0m] [0m[0morg.glassfish.hk2:osgi-resource-locator:1.0.3[0m
+[0m[[0m[0minfo[0m] [0m[0morg.glassfish.jersey.core:jersey-common:2.34[0m
+[0m[[0m[0minfo[0m] [0m[0morg.jetbrains:annotations:13.0[0m
+[0m[[0m[0minfo[0m] [0m[0morg.jetbrains.kotlin:kotlin-stdlib-common:1.6.0[0m
+[0m[[0m[0minfo[0m] [0m[0morg.jetbrains.kotlin:kotlin-stdlib-jdk7:1.6.21[0m
+[0m[[0m[0minfo[0m] [0m[0morg.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.21[0m
+[0m[[0m[0minfo[0m] [0m[0morg.jetbrains.kotlin:kotlin-stdlib:1.6.0[0m
+[0m[[0m[0minfo[0m] [0m[0morg.json:json:20211205[0m
+[0m[[0m[0minfo[0m] [0m[0morg.lz4:lz4-java:1.7.1[0m
+[0m[[0m[0minfo[0m] [0m[0morg.reactivestreams:reactive-streams:1.0.2[0m
+[0m[[0m[0minfo[0m] [0m[0morg.scala-lang.modules:scala-collection-compat_2.12:2.6.0[0m
+[0m[[0m[0minfo[0m] [0m[0morg.scala-lang.modules:scala-java8-compat_2.12:1.0.2[0m
+[0m[[0m[0minfo[0m] [0m[0morg.scala-lang:scala-library:2.12.15[0m
+[0m[[0m[0minfo[0m] [0m[0morg.scala-lang:scala-reflect:2.12.15[0m
+[0m[[0m[0minfo[0m] [0m[0morg.scalactic:scalactic_2.12:3.2.10[0m
+[0m[[0m[0minfo[0m] [0m[0morg.slf4j:slf4j-api:1.7.36[0m
+[0m[[0m[0minfo[0m] [0m[0morg.spark-project.spark:unused:1.0.0[0m
+[0m[[0m[0minfo[0m] [0m[0morg.tukaani:xz:1.8[0m
+[0m[[0m[0minfo[0m] [0m[0morg.xerial.snappy:snappy-java:1.1.8.2[0m
+[0m[[0m[0minfo[0m] [0m[0mredis.clients:jedis:4.2.3[0m
+[0m[[0m[0minfo[0m] [0m[0mza.co.absa:abris_2.12:6.3.0[0m
+[0m[[0m[0minfo[0m] [0m[0mza.co.absa.commons:commons_2.12:1.0.0[0m
+[0m[[0m[0minfo[0m] [0m[0m[Streaming Cntry Price Onprem] Copying unmanaged dependencies:[0m
+[0m[[0m[0minfo[0m] [0m[0m[Streaming Cntry Price Onprem] Copying explicit dependencies:[0m
+[0m[[0m[0minfo[0m] [0m[0m[Streaming Cntry Price Onprem] Create a bin folder: target/pack/bin[0m
+[0m[[0m[0minfo[0m] [0m[0m[Streaming Cntry Price Onprem] Generating launch scripts[0m
+[0m[[0m[0minfo[0m] [0m[0m[Streaming Cntry Price Onprem] main class for streaming-cntry-price-on-prem: com.ibm.dswdiaods.pricing_onprem.StreamingCntryPriceOnPrem[0m
+[0m[[0m[0minfo[0m] [0m[0m[Streaming Cntry Price Onprem] Generating target/pack/bin/streaming-cntry-price-on-prem[0m
+[0m[[0m[0minfo[0m] [0m[0m[Streaming Cntry Price Onprem] Generating target/pack/bin/streaming-cntry-price-on-prem.bat[0m
+[0m[[0m[0minfo[0m] [0m[0m[Streaming Cntry Price Onprem] main class for streaming-cntry-price-on-prem-local: com.ibm.dswdiaods.pricing_onprem.StreamingCntryPriceOnPremLocal[0m
+[0m[[0m[0minfo[0m] [0m[0m[Streaming Cntry Price Onprem] Generating target/pack/bin/streaming-cntry-price-on-prem-local[0m
+[0m[[0m[0minfo[0m] [0m[0m[Streaming Cntry Price Onprem] Generating target/pack/bin/streaming-cntry-price-on-prem-local.bat[0m
+[0m[[0m[0minfo[0m] [0m[0m[Streaming Cntry Price Onprem] packed resource directories = /Users/ricardomaravilla/Documents/GitHub/Streaming/streaming_cntry_price/onprem/src/pack[0m
+[0m[[0m[0minfo[0m] [0m[0m[Streaming Cntry Price Onprem] Generating target/pack/Makefile[0m
+[0m[[0m[0minfo[0m] [0m[0m[Streaming Cntry Price Onprem] Generating target/pack/VERSION[0m
+[0m[[0m[0minfo[0m] [0m[0m[Streaming Cntry Price Onprem] done.[0m
+[0m[[0m[32msuccess[0m] [0m[0mTotal time: 6 s, completed 21 feb. 2023 17:41:18[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0mForcing garbage collection...[0m
+[0m[[0m[0minfo[0m] [0m[0mshutting down sbt server[0m

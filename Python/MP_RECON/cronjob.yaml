@@ -1,0 +1,45 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: loadreport
+  namespace: loadreport
+  labels:
+    app: loadreport
+spec:
+# runs every day 10 am 0 15 * * *
+  schedule: "0 23 * * *"
+  concurrencyPolicy: Forbid
+  successfulJobsHistoryLimit: 1
+  failedJobsHistoryLimit: 1
+  jobTemplate:
+    spec:
+      template:
+        metadata:
+          name: loadreport
+          labels:
+            app: loadreport
+            version: "1.0"
+        spec:
+          containers:
+          - name: loadreport
+            image: docker-na-private.artifactory.swg-devops.com/txo-dswim-esb-docker-local/load-report-mp:1.6.5
+            imagePullPolicy: Always
+            envFrom:
+              - configMapRef:
+                  name: loadreport-configmap
+              - secretRef:
+                  name: sm-url
+              - secretRef:
+                  name: sm-apikey
+              - secretRef:
+                  name: odsoper
+            volumeMounts:
+              - name: keystore
+                mountPath: /etc/keystore
+          volumes:
+          - name: keystore
+            secret:
+              secretName: keystore
+          imagePullSecrets:
+          - name: regcred
+          restartPolicy: Never

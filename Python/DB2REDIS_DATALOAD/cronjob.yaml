@@ -1,0 +1,43 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: db2redis
+  namespace: db2redis-qa
+  labels:
+    app: db2redis
+spec:
+# runs every day 10 am 0 15 * * *
+  schedule: "0 15 * * *"
+  concurrencyPolicy: Forbid
+  successfulJobsHistoryLimit: 1
+  failedJobsHistoryLimit: 1
+  jobTemplate:
+    spec:
+      template:
+        metadata:
+          name: db2redis
+          labels:
+            app: db2redis
+            version: "0.1"
+        spec:
+          containers:
+          - name: db2redis
+            image: docker-na.artifactory.swg-devops.com/txo-dswim-esb-docker-local/db2redis:2.0.1
+            imagePullPolicy: Always
+            envFrom:
+              - configMapRef:
+                  name: db2redis-configmap
+              - secretRef:
+                  name: odsoper
+              - secretRef:
+                  name: redis-credentials
+            volumeMounts:
+              - name: keystore
+                mountPath: /etc/keystore
+          volumes:
+          - name: keystore
+            secret:
+              secretName: keystore
+          imagePullSecrets:
+          - name: regcred
+          restartPolicy: Never

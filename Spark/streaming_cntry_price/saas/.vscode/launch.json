@@ -1,0 +1,58 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "scala",
+      "request": "launch",
+      "name": "Local",
+      "mainClass": "com.ibm.dswdiaods.pricing_saas.StreamingCntryPriceSaaSLocal",
+      "args": ["--table_name cntry_price_tierd_slt_test"],
+      "jvmOptions": ["-Djavax.net.ssl.trustStore=/Users/ricardomaravilla/Documents/keystore/ssl_key.jks","-Dlog4j.configurationFile=/Users/ricardomaravilla/Documents/GitHub/Streaming/streaming_cntry_price/saas/src/main/resources/log4j2.properties"],
+      "env": {"DSWDIA_CONF_FILEPATH":"/Users/ricardomaravilla/Documents/streaming/dswdia_config_uat.conf",
+              "SSL_KEY":"/Users/ricardomaravilla/Documents/keystore/ssl_key.jks",
+              "KAFKA_TOPICS":"odsqa.slt0.l_cntry_price_tierd,odsqa.slt0.l_cntry_price_tierd_gph",
+              "SCHEMA_REGISTRY_URL":"http://ccpcls.dsw-dia-dataflow-877236.us-south.containers.appdomain.cloud:18081",
+              "REDIS_TOPIC":"odsfvt.cntry_price",
+              "REDIS_URL":"REDIS_URL"}
+    },
+    {
+      "type": "scala",
+      "request": "launch",
+      "name": "RedisTest",
+      "testClass": "com.ibm.dswdia.core.RedisTest"
+    },
+    {
+      "type": "scala",
+      "request": "launch",
+      "name": "VaultTest",
+      "testClass": "com.ibm.dswdia.core.VaultTest"
+    },
+    {
+      "type": "scala",
+      "request": "launch",
+      "name": "JDBCSparkTest",
+      "testClass": "com.ibm.dswdia.core.JDBCSparkTest"
+    },
+    {
+      "type": "scala",
+      "request": "launch",
+      "name": "DatabaseTest",
+      "testClass": "com.ibm.dswdia.core.DatabaseTest"
+    },
+    {
+      "type": "scala",
+      "request": "launch",
+      "name": "CloudantTest",
+      "testClass": "com.ibm.dswdia.core.CloudantTest"
+    },
+    {
+      "type": "scala",
+      "request": "launch",
+      "name": "KafkaTest",
+      "testClass": "com.ibm.dswdia.core.KafkaTest"
+    }
+  ]
+}

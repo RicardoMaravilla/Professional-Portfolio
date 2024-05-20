@@ -1,0 +1,6 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(test JsonMakerTest, Some(d324e776-6ac1-411e-b064-95eb90e41337), Some(CommandSource(console0)))[0m
+[0m[[0m[31merror[0m] [0m[0mExpected whitespace character[0m
+[0m[[0m[31merror[0m] [0m[0mExpected '/'[0m
+[0m[[0m[31merror[0m] [0m[0mtest JsonMakerTest[0m
+[0m[[0m[31merror[0m] [0m[0m     ^[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m

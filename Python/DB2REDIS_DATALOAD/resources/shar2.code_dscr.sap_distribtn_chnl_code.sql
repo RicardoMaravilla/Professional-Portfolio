@@ -1,0 +1,1 @@
+SELECT code FROM shar2.code_dscr WHERE COL_NAME = 'sap_distribtn_chnl_code'

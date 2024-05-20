@@ -1,0 +1,4 @@
+[debug] [root-test] Classpath dependencies List()
+[debug] [root-test] Dependencies from configurations List(root)
+[debug] Bloop wrote the configuration of project 'root-test' to '/Users/ricardomaravilla/Documents/GitHub/Streaming/streaming_cntry_price/onprem/.bloop/root-test.json'
+[success] Generated .bloop/root-test.json
